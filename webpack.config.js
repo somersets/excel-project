@@ -2,7 +2,6 @@ const path = require('path')
 const {CleanWebpackPlugin} = require('clean-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
-// const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const ExtractCssChunks = require('extract-css-chunks-webpack-plugin')
 
 const isProd = process.env.NODE_ENV === 'production'
@@ -14,7 +13,8 @@ const jsLoaders = () => {
     {
       loader: 'babel-loader',
       options: {
-        presets: ['@babel/preset-env']
+        presets: ['@babel/preset-env'],
+        plugins: ['@babel/plugin-proposal-class-properties']
       }
     }
   ]
@@ -81,11 +81,11 @@ module.exports = {
         ],
       },
       {
-        test: /\?m.js$/,
+        // test: /\?m.js$/,
+        test: /\.m?js$/,
         exclude: /node_modules/,
         use: jsLoaders()
       }
     ]
   }
-
 }
