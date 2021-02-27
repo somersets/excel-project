@@ -1,9 +1,9 @@
-import { ExcelComponent } from '@core/ExcelComponent';
-import { $ } from '@core/dom';
-import { changeTitle } from '@/redux/actions';
-import { defaultTitle } from '@core/constants';
-import { debounce } from '@core/utils';
-import { ActiveRoute } from '@core/routes/ActiveRoute';
+import { ExcelComponent } from '@core/ExcelComponent'
+import { $ } from '@core/dom'
+import { changeTitle } from '@/redux/actions'
+import { defaultTitle } from '@core/constants'
+import { debounce } from '@core/utils'
+import { ActiveRoute } from '@core/routes/ActiveRoute'
 
 export class Header extends ExcelComponent {
   static className = 'excel__header'
@@ -12,7 +12,7 @@ export class Header extends ExcelComponent {
       name: 'Header',
       listeners: ['input', 'click'],
       ...options
-    });
+    })
   }
 
   prepare() {

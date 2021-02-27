@@ -1,8 +1,8 @@
 import { $ } from '@core/dom'
-import { Emitter } from '@core/Emitter';
-import { StoreSubscriber } from '@core/StoreSubscriber';
-import { updateDate } from '@/redux/actions';
-import { preventDefault } from '@core/utils';
+import { Emitter } from '@core/Emitter'
+import { StoreSubscriber } from '@core/StoreSubscriber'
+import { updateDate } from '@/redux/actions'
+import { preventDefault } from '@core/utils'
 
 export class Excel {
   constructor(options) {
