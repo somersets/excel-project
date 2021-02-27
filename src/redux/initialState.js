@@ -1,5 +1,5 @@
-import { defaultStyles, defaultTitle } from '@core/constants';
-import { clone } from '@core/utils';
+import { defaultStyles, defaultTitle } from '@core/constants'
+import { clone } from '@core/utils'
 
 const defaultState = {
   title: defaultTitle,

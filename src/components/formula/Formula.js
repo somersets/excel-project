@@ -1,5 +1,5 @@
 import { ExcelComponent } from '@core/ExcelComponent';
-import { $ } from '@core/dom';
+import { $ } from '@core/dom'
 
 export class Formula extends ExcelComponent {
   static className = 'excel__formula'

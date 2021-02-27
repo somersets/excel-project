@@ -1,7 +1,7 @@
 import {
   CHANGE_TEXT, CHANGE_STYLES,
   TABLE_RESIZE, APPLY_STYLE, CHANGE_TITLE, UPDATE_DATE
-} from '@/redux/types';
+} from '@/redux/types'
 
 export function rootReducer(state, action) {
   let field
