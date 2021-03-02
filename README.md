@@ -1,2 +1,2 @@
 # excel-project
-Pure JavaScript Excel
+Pure JavaScript Excel like Google Table
